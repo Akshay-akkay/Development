@@ -1,5 +1,12 @@
 {
-    "extends": [
-      "wesbos"
-    ]
-  }
+  "extends": ["wesbos"],
+  "ignorePatterns": ["views/*.ejs", "views/**/*.ejs"]
+  // "overrides": [
+  //   {
+  //     "files": ["views/*.ejs"],
+  //     "rules": {
+
+  //     }
+  //   }
+  // ]
+}
