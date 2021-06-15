@@ -1,9 +1,14 @@
 {
-  "repository": "#",
+  "repository": {
+    "type": "git",
+    "url": "#"
+  },
   "license": "UNLICENSED",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
-    "dev": "webpack serve --config ./bundler/webpack.dev.js"
+    "dev": "webpack serve --config ./bundler/webpack.dev.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@babel/core": "^7.13.1",
@@ -25,5 +30,24 @@
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3"
+  },
+  "name": "threejs-webpack-starter",
+  "description": "Courtesy of Bruno Simon of https://threejs-journey.xyz/",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-wesbos": "^1.0.1",
+    "eslint-plugin-html": "^6.1.2",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.3.1"
   }
 }
