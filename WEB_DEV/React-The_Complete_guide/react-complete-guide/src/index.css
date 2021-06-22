@@ -14,4 +14,6 @@ body {
   background-image: url("https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
+  /* background-image: linear-gradient(to right top, #6bd1c6, #59ccd3, #50c6de, #56bfe6, #67b6ea, #68b9ef, #68bcf3, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
 }

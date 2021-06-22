@@ -1,0 +1,28 @@
+.expenses-filter {
+    color: rgb(53, 53, 53);
+    padding: 0 1rem;
+  }
+  
+  .expenses-filter__control {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+  
+  .expenses-filter label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .expenses-filter select {
+    outline: none;
+    font: inherit;
+    padding: 0.25rem 3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: inherit;
+    background-color: #8ca8f04c;
+  }
+  

@@ -1,0 +1,20 @@
+.nue-card {
+    transition: box-shadow 0.3s ease-in-out;
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+    box-shadow: 0 0 0 #0000003f inset, 0 0 0 #ffffffcf inset, 6px 6px 12px 2px #0000003f, -6px -6px 12px 2px #ffffffcf;
+    border-style: outset;
+    border-color: rgba(70, 81, 91, 0.167);
+    border-width: 0.5px;
+    
+}
+
+.nue-card:focus-within {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 6px 6px 12px 2px #0000003f inset, -6px -6px 12px 2px #ffffffcf inset, 0 0 0 #0000003f, 0 0 0  #ffffffcf;
+}
+
+.nue-card:hover {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 6px 6px 12px 2px #0000003f inset, -6px -6px 12px 2px #ffffffcf inset, 0 0 0 #0000003f, 0 0 0  #ffffffcf;
+}
