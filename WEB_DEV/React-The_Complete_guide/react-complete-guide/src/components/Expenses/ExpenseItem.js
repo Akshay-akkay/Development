@@ -9,14 +9,16 @@ function ExpenseItem(props) {
   const expenseTitle = props.title;
 
   return (
-    <NueCard className="expense-item">
-      <ExpenseDate date={expenseDate} />
-      <div className="expense-item__description">
-        <h2>{expenseTitle}</h2>
-        <NueCard className="expense-item__price">$ {expenseAmount}</NueCard>
-      </div>
-      {/* <button onClick={clickHandler}>Change Title</button> */}
-    </NueCard>
+    <li>
+      <NueCard className="expense-item">
+        <ExpenseDate date={expenseDate} />
+        <div className="expense-item__description">
+          <h2>{expenseTitle}</h2>
+          <NueCard className="expense-item__price">$ {expenseAmount}</NueCard>
+        </div>
+        {/* <button onClick={clickHandler}>Change Title</button> */}
+      </NueCard>
+    </li>
   );
 }
 
