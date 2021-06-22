@@ -22,7 +22,7 @@ function ExpenseForm(props) {
 
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
     };
     props.onSaveExpenseData(expenseData);
@@ -74,10 +74,14 @@ function ExpenseForm(props) {
             </NueCard>
           </div>
         </div>
-
-        <NueCard className="new-expense__actions">
-          <button type="submit">Add Expense</button>
-        </NueCard>
+        <div className="new-expense__actions">
+          <NueCard>
+            <button onClick={props.toggleExpenseForm}>Cancel</button>
+          </NueCard>
+          <NueCard>
+            <button type="submit">Add Expense</button>
+          </NueCard>
+        </div>
       </form>
     </div>
   );
